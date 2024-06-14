@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> damo 2</title>
+        <style>
+            body{
+                font-family: arial;
+            }
+            #main{
+                width: 650px;
+                height: auto;
+                border: 2px black solid;
+                margin: 0 auto 0 auto;
+                display: grid;
+                
+                grid-template-columns:repeat(3,1fr) ;
+                grid-template-rows: 150px 120px 150px 120px ;
+                
+                grid-gap: 5px;
+                grid-template-areas: "one two three"
+                                     "one four four"
+                                     "five six seven"
+                                     "eight eight seven";
+            }
+            .one{
+                background: lightcoral;
+                grid-area: one;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+            .two{
+                background: lightskyblue;
+                grid-area: two;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .three{
+                background: lightskyblue;
+                grid-area: three;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .four{
+                background: lightgreen;
+                grid-area: four;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .five{
+                background: lightskyblue;
+                grid-area: five;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+            .six{
+                background: lightskyblue;
+                grid-area: six;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+            .seven{
+                background: lightcoral;
+                grid-area: seven;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+
+            }
+            .eight{
+                background: lightgreen;
+                grid-area: eight;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="main">
+            <div class="one">1</div>
+
+            <div class="two">2</div>
+
+            <div class="three">3</div>
+
+            <div class="four">4</div>
+
+            <div class="five">5</div>
+
+            <div class="six">6</div>
+
+            <div class="seven">7</div>
+            
+            <div class="eight">8</div>
+
+        </div>
+    </body>
+</html>
